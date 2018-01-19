@@ -120,7 +120,7 @@ public class DocumentRESTResourceTest {
 				.accept(MediaType.APPLICATION_JSON_VALUE).content(json)).andExpect(status().isOk())
 				.andExpect(jsonPath("$.appCode", is(doc.getAppCode())))
 				.andExpect(jsonPath("$.version", is(doc.getVersion())))
-				.andExpect(jsonPath("$.lastModifieddDate", is(not(equalTo(null)))));
+				.andExpect(jsonPath("$.lastModifiedDate", is(not(equalTo(null)))));
 	}
 
 }

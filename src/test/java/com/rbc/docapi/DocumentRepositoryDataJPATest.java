@@ -71,7 +71,7 @@ public class DocumentRepositoryDataJPATest {
 
 		// Doc #2
 		Document doc2 = new Document();
-		doc2.setAppCode("Java2");
+		doc2.setAppCode("Java");
 		doc2.setVersion("V100");
 		doc2.setBody("this is Document body 2");
 		doc2.setCratedDate(new Date());
@@ -122,10 +122,10 @@ public class DocumentRepositoryDataJPATest {
 	 */
 	@Test
 	public void fetchAllDocumentByAppCodeOrderByLastModifiedDateDescendantOrder() {
-		List<Document> docs = service.findAllByAppCodeOrderByLastModifiedDateDesc("Java");
+		List<Document> docs = service.findByAppCodeOrderByLastModifiedDateDesc("Java");
 		assertNotNull(docs);
-		assertTrue(docs.size() == 2);
-		assertTrue(docs.get(0).getLastModifieddDate().getTime() > docs.get(1).getLastModifieddDate().getTime());
+		assertTrue(docs.size() == 3);
+		assertTrue(docs.get(0).getLastModifiedDate().getTime() > docs.get(1).getLastModifiedDate().getTime());
 	}
 
 	/**

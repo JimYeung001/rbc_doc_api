@@ -40,7 +40,7 @@ public class Document implements Serializable {
 	/**
 	 * Document last modified date
 	 */
-	private Date lastModifieddDate;
+	private Date lastModifiedDate;
 
 	/**
 	 * Document body
@@ -66,7 +66,7 @@ public class Document implements Serializable {
 		this.version = version;
 		this.appCode = appCode;
 		this.cratedDate = createdDate;
-		this.lastModifieddDate = lastModifieddDate;
+		this.lastModifiedDate = lastModifieddDate;
 		this.body = body;
 	}
 
@@ -133,16 +133,16 @@ public class Document implements Serializable {
 	/**
 	 * @return the lastModifieddDate
 	 */
-	public Date getLastModifieddDate() {
-		return lastModifieddDate;
+	public Date getLastModifiedDate() {
+		return lastModifiedDate;
 	}
 
 	/**
 	 * @param lastModifieddDate
 	 *            the lastModifieddDate to set
 	 */
-	public void setLastModifieddDate(Date lastModifieddDate) {
-		this.lastModifieddDate = lastModifieddDate;
+	public void setLastModifieddDate(Date lastModifiedDate) {
+		this.lastModifiedDate = lastModifiedDate;
 	}
 
 	/**
@@ -209,7 +209,7 @@ public class Document implements Serializable {
 	@Override
 	public String toString() {
 		return "Document [id=" + id + ", version=" + version + ", appCode=" + appCode + ", cratedDate=" + cratedDate
-				+ ", lastModifieddDate=" + lastModifieddDate + ", body=" + body + "]";
+				+ ", lastModifiedDate=" + lastModifiedDate + ", body=" + body + "]";
 	}
 
 }

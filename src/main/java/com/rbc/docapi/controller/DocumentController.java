@@ -85,7 +85,7 @@ public class DocumentController {
 	 */
 	@GetMapping("/{appCode}/config")
 	public List<Document> getAllDocument(@PathVariable String appCode) {
-		return getDocService().findAllByAppCodeOrderByLastModifiedDateDesc(appCode);
+		return getDocService().findByAppCodeOrderByLastModifiedDateDesc(appCode);
 	}
 
 	/**

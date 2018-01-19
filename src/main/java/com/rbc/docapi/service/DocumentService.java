@@ -41,7 +41,7 @@ public interface DocumentService {
 	 *            appCode
 	 * @return {@code List<Document> }
 	 */
-	public List<Document> findAllByAppCodeOrderByLastModifiedDateDesc(String appCode);
+	public List<Document> findByAppCodeOrderByLastModifiedDateDesc(String appCode);
 
 	/**
 	 * Find {@code Document } by AppCode and version
