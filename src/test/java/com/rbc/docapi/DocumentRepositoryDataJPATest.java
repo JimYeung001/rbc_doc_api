@@ -125,7 +125,7 @@ public class DocumentRepositoryDataJPATest {
 		List<Document> docs = service.findByAppCodeOrderByLastModifiedDateDesc("Java");
 		assertNotNull(docs);
 		assertTrue(docs.size() == 3);
-		assertTrue(docs.get(0).getLastModifiedDate().getTime() > docs.get(1).getLastModifiedDate().getTime());
+		assertTrue(docs.get(0).getLastModifiedDate().getTime() > docs.get(2).getLastModifiedDate().getTime());
 	}
 
 	/**
